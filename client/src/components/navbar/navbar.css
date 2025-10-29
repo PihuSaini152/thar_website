@@ -1,0 +1,395 @@
+/* Modern Stylish Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid #ff6b00;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Logo Section */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.main-logo {
+  height: 40px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.logo-divider {
+  width: 2px;
+  height: 40px;
+  background: linear-gradient(to bottom, transparent, #ff6b00, transparent);
+}
+
+.thar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.thar-main {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ff6b00;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Arial Black', sans-serif;
+  text-shadow: 0 2px 4px rgba(255, 107, 0, 0.3);
+}
+
+.thar-sub {
+  font-size: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: -2px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+/* ✅ NAV LINK STYLES - BOTH BUTTON AND LINK */
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ✅ SPECIFIC STYLES FOR LINK ELEMENTS */
+a.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-text {
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.link-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #ff6b00;
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.nav-link:hover .link-text {
+  color: #ff6b00;
+  transform: translateY(-2px);
+}
+
+.nav-link:hover .link-hover {
+  width: 100%;
+}
+
+/* Action Buttons */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.action-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.action-btn:hover::before {
+  left: 100%;
+}
+
+/* .brochure-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ff6b00;
+}
+
+.brochure-btn:hover {
+  background: #ff6b00;
+  color: #1a1a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
+} */
+
+.book-btn {
+  background: linear-gradient(135deg, #ff6b00, #ff8c00);
+  color: #1a1a1a;
+  border: 2px solid #ff6b00;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* EXTREME SMALL BUTTON - Agar abhi bhi bada dikhe */
+.nav-actions {
+  gap: 8px;
+}
+
+.action-btn {
+  padding: 6px 12px !important;
+  font-size: 11px !important;
+  height: 32px !important;
+  gap: 4px !important;
+}
+
+.book-btn {
+  min-width: 80px !important;
+}
+
+.btn-icon {
+  font-size: 12px !important;
+}
+
+.book-btn:hover {
+  background: linear-gradient(135deg, #ff8c00, #ff6b00);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.btn-icon {
+  font-size: 16px;
+}
+
+.btn-text {
+  font-weight: 700;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  gap: 4px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background: #ffffff;
+  transition: 0.3s;
+  border-radius: 2px;
+}
+
+.menu-toggle-active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+  background: #ff6b00;
+}
+
+.menu-toggle-active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle-active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+  background: #ff6b00;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 20px;
+  }
+  
+  .nav-link {
+    font-size: 13px;
+  }
+  
+  .action-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 20px;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 50px;
+    transition: left 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  }
+
+  .nav-menu-active {
+    left: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .thar-main {
+    font-size: 24px;
+  }
+  
+  .thar-sub {
+    font-size: 9px;
+  }
+  
+  .main-logo {
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 0 15px;
+  }
+  
+  .logo-wrapper {
+    gap: 10px;
+  }
+  
+  .thar-main {
+    font-size: 20px;
+  }
+  
+  .thar-sub {
+    font-size: 8px;
+  }
+  
+  .main-logo {
+    height: 30px;
+  }
+  
+  .logo-divider {
+    height: 35px;
+  }
+}
+
+/* Mobile Actions (shown only in mobile menu) */
+.mobile-actions {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px 20px;
+  width: 100%;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .mobile-actions {
+    display: flex;
+  }
+  
+  .mobile-actions .action-btn {
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+  

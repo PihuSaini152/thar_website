@@ -174,18 +174,7 @@ const BookingStatus = () => {
             <button className="support-btn">📱 Call: 1800-THAR</button>
             <button className="support-btn">💬 WhatsApp</button>
           </div>
-          
-          {/* ✅ Admin Link - Tracking View */}
-          <div style={{textAlign: 'center', marginTop: '20px', padding: '10px'}}>
-            <small>
-              <a 
-                href="/adminpannel" 
-                style={{color: '#ff6b00', textDecoration: 'none', fontSize: '12px'}}
-              >
-                👑 Admin Access
-              </a>
-            </small>
-          </div>
+        
         </div>
       </div>
     );
@@ -297,21 +286,8 @@ const BookingStatus = () => {
           </div>
         </div>
         
-        <div className="backend-note">
-          <p>🔧 <strong>Note:</strong> Make sure backend server is running on port 5000</p>
-        </div>
-
-        {/* ✅ Admin Link - Search View */}
-        <div style={{textAlign: 'center', marginTop: '20px', padding: '10px'}}>
-          <small>
-            <a 
-              href="/adminpannel" 
-              style={{color: '#ff6b00', textDecoration: 'none', fontSize: '12px'}}
-            >
-              👑 Admin Access
-            </a>
-          </small>
-        </div>
+        
+      
       </div>
     </div>
   );

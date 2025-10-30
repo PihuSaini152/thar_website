@@ -1,13 +1,74 @@
+/* ✅ Responsive Fix */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ✅ Images auto-scale on mobile */
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+/* ✅ Page container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ✅ Mobile screens */
+@media (max-width: 768px) {
+  /* Navbar responsive */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Hero section responsive */
+  .hero-section {
+    text-align: center;
+    padding: 40px 10px;
+  }
+
+  .hero-section h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  /* Buttons */
+  button {
+    width: 100%;
+    max-width: 300px;
+    font-size: 1rem;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px 10px;
+  }
+}
+  

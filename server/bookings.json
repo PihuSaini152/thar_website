@@ -23,5 +23,17 @@
     "status": "Delivered",
     "bookingDate": "2025-10-29T06:05:16.041Z",
     "lastUpdated": "2025-10-29T09:05:18.653Z"
+  },
+  {
+    "bookingId": "THAR1761800411857",
+    "customerName": "priyanka",
+    "email": "admin@gmail.com",
+    "phone": "8955622531",
+    "city": "Jaipur",
+    "preferredDate": "",
+    "vehicleModel": "Thar LX",
+    "testDrive": false,
+    "status": "Pending",
+    "bookingDate": "2025-10-30T05:00:11.857Z"
   }
 ]

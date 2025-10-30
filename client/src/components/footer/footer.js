@@ -18,11 +18,13 @@ const Footer = () => {
               <span className="footer-thar">THAR</span>
             </div>
             <p className="footer-tagline">Built to Conquer Any Terrain</p>
+
+            {/* ✅ Changed href="#" → onClick preventDefault */}
             <div className="social-links">
-              <a href="#" className="social-link">📘</a>
-              <a href="#" className="social-link">📷</a>
-              <a href="#" className="social-link">🐦</a>
-              <a href="#" className="social-link">📺</a>
+              <a href="!#" className="social-link" onClick={(e) => e.preventDefault()}>📘</a>
+              <a href="!#" className="social-link" onClick={(e) => e.preventDefault()}>📷</a>
+              <a href="!#" className="social-link" onClick={(e) => e.preventDefault()}>🐦</a>
+              <a href="!#" className="social-link" onClick={(e) => e.preventDefault()}>📺</a>
             </div>
           </div>
 
@@ -73,10 +75,12 @@ const Footer = () => {
           <div className="footer-copyright">
             <p>&copy; 2024 Mahindra & Mahindra Ltd. All Rights Reserved.</p>
           </div>
+
+          {/* ✅ Changed href="#" to safe value */}
           <div className="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Disclaimer</a>
+            <a href="!#" onClick={(e) => e.preventDefault()}>Privacy Policy</a>
+            <a href="!#" onClick={(e) => e.preventDefault()}>Terms of Service</a>
+            <a href="!#" onClick={(e) => e.preventDefault()}>Disclaimer</a>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ function App() {
           <Route path="/booking" element={<Booking />} />
         <Route path="/adminpannel" element={<AdminPanel />} />  
           <Route path="/booking-status" element={<BookingStatus />} /> {/* ✅ CHANGE PATH */}
-        </Routes>
+        </Routes> 
         <Footer />
       </div>
     </Router>

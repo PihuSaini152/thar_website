@@ -1,10 +1,11 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',  // XAMPP default (empty)
-  database: 'thar_website'
+  host: 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
+  user: 'wNMoHQ6vRPRqbSC.root',
+  password: 'x7HFUsKrndP839u3',
+  database: 'test',
+  port: 4000,
 });
 
 connection.connect((err) => {

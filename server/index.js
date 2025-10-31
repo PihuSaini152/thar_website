@@ -224,8 +224,6 @@ app.delete('/api/admin/delete-booking/:bookingId', (req, res) => {
 app.get('/', (req, res) => {
   res.json({ 
     message: '🚗 Thar Booking API is running!',
-    timestamp: new Date().toISOString(),
-    storage: 'JSON File (No Database)'
   });
 });
 

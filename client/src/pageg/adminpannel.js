@@ -26,7 +26,7 @@ const AdminPanel = () => {
   const fetchBookings = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/admin/bookings');
+      const response = await fetch('https://thar-website-blmg.vercel.app/api/admin/bookings');
       const result = await response.json();
       if (result.success) {
         setBookings(result.bookings);
@@ -42,7 +42,7 @@ const AdminPanel = () => {
   // Update booking status
   const updateStatus = async (bookingId, newStatus) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/update-status/${bookingId}`, {
+      const response = await fetch(`https://thar-website-blmg.vercel.app/api/admin/update-status/${bookingId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

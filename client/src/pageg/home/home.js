@@ -103,7 +103,7 @@ const Home = () => {
     e.preventDefault();
     
     try {
-      const response = await fetch('http://localhost:5000/api/book-test-drive', {
+      const response = await fetch('https://thar-website-blmg.vercel.app/api/book-test-drive', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

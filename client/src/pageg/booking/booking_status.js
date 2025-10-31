@@ -34,7 +34,7 @@ const BookingStatus = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/booking/check', {
+      const response = await fetch('https://thar-website-blmg.vercel.app/api/booking/check', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

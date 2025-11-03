@@ -267,7 +267,7 @@ const Home = () => {
       </section>
 
       {/* ===== TEST DRIVE SECTION ===== */}
-      {/* <section className="testdrive-section" id="test-drive">
+      <section className="testdrive-section" id="test-drive">
         <div className="container">
           <div className="testdrive-content">
             <div className="testdrive-text">
@@ -348,7 +348,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 };

@@ -138,7 +138,7 @@ app.get('/api/booking/all', (req, res) => {
 app.get('/api/admin/bookings', (req, res) => {
   try {
     const bookings = readBookings();
-    res.json({
+    res.json({  
       success: true,
       bookings: bookings
     });

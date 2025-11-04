@@ -1,11 +1,11 @@
 const mysql = require('mysql2');
 
 const connection = mysql.createConnection({
-  host: 'gateway01.ap-southeast-1.prod.aws.tidbcloud.com',
-  user: 'wNMoHQ6vRPRqbSC.root',
-  password: 'x7HFUsKrndP839u3',
-  database: 'test',
-  port: 4000,
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'thar_website',
+  // port: 5000,
 });
 
 connection.connect((err) => {

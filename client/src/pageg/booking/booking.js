@@ -29,7 +29,7 @@ const Booking = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://thar-website-blmg.vercel.app/api/booking/create', {
+      const response = await fetch('http://localhost:5000/api/booking/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -38,7 +38,7 @@ const Booking = () => {
       });
       
       const result = await response.json();
-      
+
       if (response.ok && result.success) {
         setBookingDetails(result.booking);
         setBookingSuccess(true);

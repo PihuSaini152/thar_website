@@ -71,5 +71,17 @@
     "testDrive": false,
     "status": "Pending",
     "bookingDate": "2025-11-04T04:51:38.515Z"
+  },
+  {
+    "bookingId": "THAR1762234660453",
+    "customerName": "muskan",
+    "email": "sainipihu152@gmail.com",
+    "phone": "9796878763",
+    "city": "Jaipur",
+    "preferredDate": "",
+    "vehicleModel": "Thar LX",
+    "testDrive": false,
+    "status": "Pending",
+    "bookingDate": "2025-11-04T05:37:40.453Z"
   }
 ]

@@ -1,3 +1,11 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
 /* home.css mein */
 .home-container {
   margin-top: 80px; /* ✅ Navbar ke neeche shuru hoga */
@@ -72,14 +80,13 @@
   font-weight: 300;
   letter-spacing: 1px;
 }
+
 .hero-buttons {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
-/* Buttons styling */
 .hero-btn {
   padding: 18px 35px;
   border: none;
@@ -94,23 +101,6 @@
   align-items: center;
   gap: 10px;
 }
-
-/* 📱 Mobile fix */
-@media (max-width: 768px) {
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .hero-btn {
-    width: 80%;
-    max-width: 280px;
-    justify-content: center;
-    font-size: 15px;
-  }
-}
-
 
 .primary-btn {
   background: linear-gradient(135deg, #ff6b00, #ff8c00);

@@ -174,18 +174,6 @@ a.nav-link {
   left: 100%;
 }
 
-/* .brochure-btn {
-  background: transparent;
-  color: #ffffff;
-  border: 2px solid #ff6b00;
-}
-
-.brochure-btn:hover {
-  background: #ff6b00;
-  color: #1a1a1a;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 107, 0, 0.4);
-} */
 
 .book-btn {
   background: linear-gradient(135deg, #ff6b00, #ff8c00);
@@ -392,4 +380,14 @@ a.nav-link {
   }
 }
 
-  
+  header, .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: #111; /* ya apna color */
+}
+
+body {
+  padding-top: 0 !important;
+}

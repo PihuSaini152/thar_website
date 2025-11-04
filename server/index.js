@@ -134,6 +134,40 @@ app.get('/api/booking/all', (req, res) => {
   }
 });
 
+app.post('/api/book-test-drive', (req, res) => {
+  const { name, email, phone, city, date, variant, test_drive } = req.body;
+
+  if (!name || !email || !phone || !city || !date || !variant) {
+    return res.status(400).json({ success: false, message: 'Missing required fields' });
+  }
+
+  const bookingId = 'THAR' + Date.now();
+  const createdAt = new Date().toISOString().slice(0, 19).replace('T', ' ');
+  const status = 'pending';
+
+  const sql = `
+    INSERT INTO bookings 
+    (booking_id, name, email, phone, city, date, variant, test_drive, created_at, status)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `;
+
+  const values = [bookingId, name, email, phone, city, date, variant, test_drive ? 1 : 0, createdAt, status];
+
+  db.query(sql, values, (err, result) => {
+    if (err) {
+      console.error('❌ Database error:', err);
+      return res.status(500).json({ success: false, message: 'Database error' });
+    }
+
+    console.log('✅ New booking added:', bookingId);
+    res.status(201).json({
+      success: true,
+      message: 'Test drive booked successfully',
+      bookingId: bookingId
+    });
+  });
+});
+
 // ✅ ADMIN: GET ALL BOOKINGS (Admin panel के लिए)
 app.get('/api/admin/bookings', (req, res) => {
   try {

@@ -4,6 +4,17 @@ body {
   padding: 0;
   padding-top: 80px; /* ✅ Navbar ki height ke according adjust karo */
 }
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 
 
 .App {

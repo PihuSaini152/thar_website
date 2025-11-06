@@ -6,17 +6,15 @@ body, html {
 }
 
 
-/* home.css mein */
+
 .home-container {
-  margin-top: 80px; /* ✅ Navbar ke neeche shuru hoga */
+  margin-top: 80px; 
 }
 
-/* Home Page Styles */
 .home-page {
   margin-top: 50px;
 }
 
-/* Hero Section */
 .hero-section {
   min-height: 100vh;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
@@ -29,13 +27,14 @@ body, html {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .bg-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 100%; */
+  width: 100%;
   height: 100%;
   background: linear-gradient(90deg, #1a1a1a 40%, transparent 70%);
   z-index: 1;
@@ -129,23 +128,18 @@ body, html {
 .hero-image {
   flex: 1;
   display: flex;
-  /* justify-content: flex-end; */
+  justify-content: flex-end;
   width: 450px;
 }
 
 .thar-hero-image {
-  /* max-width: 100%; */
-  /* height: 600px; */
-  /* object-fit: cover; */
-  /* border-radius: 20px; */
-  /* box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); */
   animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
-}
+} 
 
 /* Common Container */
 .container {
@@ -529,6 +523,7 @@ body, html {
     flex-direction: column;
     text-align: center;
     padding: 60px 20px;
+    
   }
   
   .hero-text {
@@ -537,7 +532,7 @@ body, html {
   }
   
   .main-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   
   .subtitle {
@@ -549,7 +544,8 @@ body, html {
   }
   
   .thar-hero-image {
-    height: 400px;
+    height: 380px;
+    margin: auto;
   }
   
   .variants-grid {
@@ -569,7 +565,7 @@ body, html {
 
 @media (max-width: 480px) {
   .main-title {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   
   .hero-btn {
@@ -578,7 +574,8 @@ body, html {
   }
   
   .thar-hero-image {
-    height: 300px;
+    height: 280px;
+    margin: auto;
   }
   
   .section-title {
@@ -587,5 +584,44 @@ body, html {
   
   .testdrive-form {
     padding: 20px 20px;
+  }
+}
+@media (max-width: 400px){
+   .main-title {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media (max-width: 350px) {
+  
+  .maripadding-rightitle {
+    font-size: 1.1rem;
+   
+  }
+   .main-title {
+    font-size: 1.1rem;
+  }
+  .hero-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  
+  .thar-hero-image {
+    height: 300px;
+  }
+  
+  .section-title {
+    font-size: 1rem;
+  }
+  
+  .testdrive-form {
+    padding: 10px 10px;
+  }
+  
+  .hero-text {
+    margin-right: 50px;
+    margin-bottom: 40px;
+    
   }
 }
